@@ -45,7 +45,7 @@ function askQuestion() {
     const interval = setInterval(() => {
         const elapsed = Math.floor((Date.now() - startTime) / 1000);
         const remaining = Math.max(0, 15 - elapsed); // time remainf to answer question
-        console.log(`Time left for this question: ${remaining} seconds`);
+        // console.log(`Time left for this question: ${remaining} seconds`);
         if (remaining <= 0) {
             clearInterval(interval);
             console.log(`Time's up! The correct answer was: ${question.answer}`);
